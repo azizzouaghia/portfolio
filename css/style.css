@@ -327,8 +327,13 @@ width: 220px;
     font-weight: 400;
 
 }
-.resume .lang .progress-bar {
+.resume .univskill .progress-bar{
+    transition: .8s linear;
+}
+
+.resume .langs .progress-bar {
     background-color: var(--main2-color) !important;
+    transition: .8s linear;
 }
 @media(max-width:500px) {
 .resume .univblock {

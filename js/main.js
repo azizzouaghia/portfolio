@@ -36,3 +36,24 @@ let year = document.getElementById('rightsyear');
 let date = new Date();
 year.innerHTML=date.getFullYear();
 /* Add The year End*/
+
+/* Animation Start */
+//Progress Bar 
+let progressBar = document.querySelectorAll(".resume .univskill .progress-bar");
+let univskills = document.querySelector(".resume .univskills");
+let progressBarLang = document.querySelectorAll(".resume .langs .progress-bar");
+let lang = document.querySelector(".resume .langs");
+window.onscroll = ()=>{
+    if (window.scrollY > univskills.offsetTop - 400) {
+        progressBar.forEach((e) => {
+        e.style.width = e.dataset.width;
+    })}
+    if (window.scrollY > lang.offsetTop - 400) {
+        progressBarLang.forEach((e) => {
+        e.style.width = e.dataset.width;
+    })}
+}
+
+
+
+/* Animation Start */
