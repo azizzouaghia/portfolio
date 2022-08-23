@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/style.css">
+    <link id="stylesheet" rel="stylesheet" href="./css/defaultStyle.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/all.min.css">
@@ -11,6 +11,15 @@
     <title>Portfolio</title>
 </head>
 <body>
+<!-- Load Page Strat -->
+<div id="LoadPage"><img src="./img/loader.gif" alt="" srcset=""></div>
+<!-- Load Page End -->
+<div id="sections">
+<!-- Change Mode Start -->
+<div class="change-mode">
+<i class="fa-solid fa-moon"></i>
+</div>
+<!-- Change Mode End -->
 <!-- Header Start -->
 <section class="header">
 <div id="navbar" class="navc navbar">
@@ -63,7 +72,7 @@
     programming. Skilled at writing well-designed, testable, and efficient code using current best practices in Web
     development. Fast learner, hard worker, and team player who is proficient in an array of scripting languages and
     multimedia Web tools.</p>
-    <a target="_blank" href="resume.pdf"><button class="hello-btn btn btn-outline-primary"><i class="fa-solid fa-download"></i> Download CV</button></a> 
+    <a target="_blank" href="resume.pdf"><button class="hello-btn btn"><i class="fa-solid fa-download"></i> Download CV</button></a> 
 </div>
 </section>
 <!-- Hello End -->
@@ -246,6 +255,7 @@
 </div>
 </section>
 <!-- Contact End -->
+</div>
 </body>
 <script src="./js/main.js"></script>
 <script src="./js/bootstrap.js"></script>

@@ -58,10 +58,36 @@ hr {
     font-size: 18px;
 }
 } 
+
+/* Change Mode Start */
+.change-mode{
+    position:fixed ;
+    background-color: var(--main2-color);
+    bottom: 14%;
+    right: 0;
+    padding: 10px 15px 10px 10px;
+    z-index: 3;
+    cursor: pointer;
+}
+.change-mode i {
+    color: var(--header-color);
+    font-size: 25px;
+}
+@media(max-width:850px){
+.change-mode{
+    bottom: 10%;
+    opacity: .5;
+}
+.change-mode i {
+    font-size: 22px;
+}
+}
+/* Change Mode End */
+
 /* Header Start */
 .header {
     height: 480px;
-    background: linear-gradient(54deg,rgba(74, 76, 179, 0.95) 34%, hsla(0, 34%, 71%, 0.92));
+    background: linear-gradient(54deg,rgba(45,45,45,.95) 34%,rgba(45,45,45,.95));
     position: relative;
     padding: 1px;
 }
@@ -127,9 +153,8 @@ padding-left: 60px;
 
 }
 .nav-link-fix:hover{
-    color: var(--main2-color) !important;
+    color: #4a4a4ab4 !important;
     opacity: 0.8 ;
-    background-color: #fafafa !important;
 }
 .nav-link-fix:hover::after{
     content: "";
@@ -137,7 +162,7 @@ padding-left: 60px;
     width: 7px;
     height: 2px;
     bottom: 20px;
-    background: #6d56c1;
+    background: #4a4a4ab4;
 }
 @media(max-width:550px ) {
 .navbar {
@@ -165,7 +190,7 @@ padding-left: 60px;
     background-position: center;
 }
 .header{
-    background: linear-gradient(54deg,rgba(74, 76, 179, 1) 4%, hsla(0, 34%, 71%, 0.85));
+    background: linear-gradient(54deg,rgba(45, 45, 45, 1) 4%, rgba(45, 45, 45, 0.9));
 
 }
 }
@@ -281,7 +306,7 @@ width: 220px;
 .resume .univ {
     text-transform: uppercase;
     font-family: var(--p-font);
-    color: var(--main2-color);
+    color: #4a4a4a;
     font-weight: 700;
     font-size: 15px;
 }
@@ -291,7 +316,7 @@ width: 220px;
     height: 12px;
     position: absolute;
     margin-left: -47px;
-    background-color: var(--main2-color);
+    background-color: #4a4a4a;
     border: 2px solid;
     border-radius: 50%;
     z-index: -1;
@@ -306,7 +331,7 @@ width: 220px;
     font-size: 18px;
 }
 .resume .univblock {
-    border-left: 2px solid #6d56c1;
+    border-left: 2px solid #4a4a4a;
     padding-bottom: 20px;
     padding-left: 40px;
 }
@@ -330,10 +355,9 @@ width: 220px;
 .resume .univskill .progress-bar{
     transition: .8s linear;
 }
-
-.resume .langs .progress-bar {
-    background-color: var(--main2-color) !important;
-    transition: .8s linear;
+.resume .progress-bar {
+    background-color: #4a4a4a !important;
+    transition: .4s linear;
 }
 @media(max-width:500px) {
 .resume .univblock {
@@ -352,7 +376,7 @@ width: 220px;
 
 }
 .resume .lang .progress-bar {
-    background-color: var(--main2-color) !important;
+    background-color: #4a4a4a !important;
 }
 }
 /* Resume End */
@@ -369,7 +393,7 @@ width: 220px;
     font-family: var(--p-font);
     font-weight: 500;
     font-size: 15px;
-    background: linear-gradient(54deg,rgb(46, 204, 113) 40%, rgb(22, 160, 133)) !important;
+    background: linear-gradient(54deg,rgb(45, 45, 45) 40%, rgb(45, 45, 45)) !important;
     color:white;
     border: 0 solid white !important;
     padding: 7.5px 22px;
@@ -379,12 +403,12 @@ width: 220px;
     font-family: var(--p-font);
     font-size: 16px;
     color: var(--second-color);
-    font-weight: 600;  
+    font-weight: 600 ;  
 }
 .projects .card h5::before{
     content: "";
     position: absolute;
-    background-color: var(--main2-color);
+    background-color: #4a4a4a;
     width: 50%;
     height: 3px;
     border-radius: 25px;
@@ -399,7 +423,7 @@ width: 220px;
 }
 .projects .card i {
     font-size: 65px;
-    color: var(--main2-color);
+    color: #4a4a4a;
     margin: 12px 0;
     background-color: #6d56c12a;
     border-radius: 50%;
@@ -432,7 +456,7 @@ width: 220px;
 /* Contact Start */
 .contact {
     height: 475px;
-    background: linear-gradient(54deg,rgba(74, 76, 179, 0.95) 35%, hsla(0, 34%, 71%, 0.92));
+    background: linear-gradient(54deg,rgba(45,45,45,.95) 34%,rgba(45,45,45,.95));
     background-size: cover;
     padding-top: 50px;
     color: var(--header-color);
@@ -540,3 +564,62 @@ width: 220px;
 }
 }
 /* Contact End */
+
+/* Load Page Start */
+#LoadPage{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+#LoadPage img {
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    width: 250px;
+    z-index: 99;
+}
+@media(max-width:750px){
+#LoadPage img {
+    left: 35%;
+    top: 25%;
+    width: 250px;
+}
+}
+@media(max-width:600px){
+#LoadPage img {
+    left: 30%;
+    top: 25%;
+    width: 250px;
+}
+}
+@media(max-width:500px){
+#LoadPage img {
+    left: 27%;
+    top: 25%;
+    width: 250px;
+}
+}
+@media(max-width:450px){
+#LoadPage img {
+    left: 24%;
+    top: 25%;
+    width: 250px;
+}
+}
+@media(max-width:400px){
+#LoadPage img {
+    left: 20%;
+    top: 32%;
+    width: 250px;
+}
+}
+@media(max-width:350px){
+#LoadPage img {
+    left: 16%;
+    top: 32%;
+    width: 250px;
+}
+}
+/* Load Page End */
